@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 7.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/tulip-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/tulip-16x16.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="简述流程主要参考知乎文章：从零开始搭建个人博客与下面的精彩评论。简单而言，我们实现文章可被访问的流程是：利用hexo这个博客框架帮助我们将文章解析成静态网页，然后我们借助github的仓库使其可以被互联网访问（发布出去）。当然，hexo这个博客框架还有许多其它功能，我们在其基础上可以通过许多其他的主题使我们的博客文章更加美观。 主要问题1、在设置Blog根目录下_config.yml中的repos">
+  <meta name="description" content="简述流程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="首次建立此站的流程与遇到的主要问题">
 <meta property="og:url" content="http://example.com/2025/08/12/fisttime_to_establish_blogs/index.html">
 <meta property="og:site_name" content="野牧原">
-<meta property="og:description" content="简述流程主要参考知乎文章：从零开始搭建个人博客与下面的精彩评论。简单而言，我们实现文章可被访问的流程是：利用hexo这个博客框架帮助我们将文章解析成静态网页，然后我们借助github的仓库使其可以被互联网访问（发布出去）。当然，hexo这个博客框架还有许多其它功能，我们在其基础上可以通过许多其他的主题使我们的博客文章更加美观。 主要问题1、在设置Blog根目录下_config.yml中的repos">
+<meta property="og:description" content="简述流程">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-08-12T10:00:15.208Z">
-<meta property="article:modified_time" content="2025-08-12T10:21:45.664Z">
+<meta property="article:modified_time" content="2025-08-12T12:31:15.428Z">
 <meta property="article:author" content="野牧">
 <meta name="twitter:card" content="summary">
 
@@ -117,6 +117,21 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
@@ -153,7 +168,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/12/fisttime_to_establish_blogs/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.png">
       <meta itemprop="name" content="野牧">
       <meta itemprop="description" content="">
     </span>
@@ -174,7 +189,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-08-12 18:00:15 / 修改时间：18:21:45" itemprop="dateCreated datePublished" datetime="2025-08-12T18:00:15+08:00">2025-08-12</time>
+              <time title="创建时间：2025-08-12 18:00:15 / 修改时间：20:31:15" itemprop="dateCreated datePublished" datetime="2025-08-12T18:00:15+08:00">2025-08-12</time>
             </span>
 
           
@@ -188,7 +203,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="简述流程"><a href="#简述流程" class="headerlink" title="简述流程"></a>简述流程</h2><p>主要参考知乎文章：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客</a>与下面的精彩评论。<br>简单而言，我们实现文章可被访问的流程是：利用<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>这个博客框架帮助我们将文章解析成静态网页，然后我们借助github的仓库使其可以被互联网访问（发布出去）。当然，hexo这个博客框架还有许多其它功能，我们在其基础上可以通过许多其他的主题使我们的博客文章更加美观。</p>
+        <h2 id="简述流程"><a href="#简述流程" class="headerlink" title="简述流程"></a>简述流程</h2><span id="more"></span>
+<p>主要参考知乎文章：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客</a>与下面的精彩评论。<br>简单而言，我们实现文章可被访问的流程是：利用<a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>这个博客框架帮助我们将文章解析成静态网页，然后我们借助github的仓库使其可以被互联网访问（发布出去）。当然，hexo这个博客框架还有许多其它功能，我们在其基础上可以通过许多其他的主题使我们的博客文章更加美观。</p>
 <h2 id="主要问题"><a href="#主要问题" class="headerlink" title="主要问题"></a>主要问题</h2><p>1、在设置Blog根目录下_config.yml中的repository时不可以直接使用仓库地址而需要其SSH的地址</p>
 
     </div>
@@ -273,6 +289,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="野牧"
+      src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">野牧</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -308,7 +326,7 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2025-8-12 – 
   <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -316,7 +334,7 @@
   <span class="author" itemprop="copyrightHolder">野牧</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
+  </div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
         
 
